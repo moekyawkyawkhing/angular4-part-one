@@ -11,6 +11,11 @@
     <li style="float: left;"><a routerLink="/">User|</a></li>
     <li><a routerLink="/about">About Us</a></li>
   </ul>
+  <h1>if, else with template</h1>
+  <p *ngIf="true; else templateOne">It is true.</p>
+  <ng-template #templateOne>
+      It is false.
+  </ng-template>
   <router-outlet></router-outlet>
 </body>
 </html>

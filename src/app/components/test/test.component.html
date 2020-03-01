@@ -1,0 +1,10 @@
+Share service 1 <br/>
+<input type="text" #input>
+<button (click)="addData(input.value)">add</button>
+<ul>
+    <li *ngFor="let data of text">
+        {{
+            data
+        }}
+    </li>
+</ul>

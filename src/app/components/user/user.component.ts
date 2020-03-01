@@ -14,6 +14,7 @@ export class UserComponent implements OnInit {
   hello:any;
   is_edit:boolean = false;
   posts:[];
+  is_show:boolean = false;
   
   constructor(private dataservice:DataService) {
     console.log("Constructor run....");  
@@ -38,6 +39,10 @@ export class UserComponent implements OnInit {
 
   toggleEdit(){
     this.is_edit= !this.is_edit;
+  }
+
+  togglePost(){
+    this.is_show= !this.is_show;
   }
 
   ngOnInit(): void {
